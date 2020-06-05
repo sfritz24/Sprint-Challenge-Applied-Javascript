@@ -64,11 +64,15 @@ function getData(){
         const node = response.data.articles.node;
         const technology = response.data.articles.technology;
 
-        bootstrap.forEach(item => {
+        javascript.forEach(item => {
             const articleCard = cardMaker(item);
             cardContain.appendChild(articleCard);
         });
-        javascript.forEach(item =>{
+        bootstrap.forEach(item =>{
+            const articleCard = cardMaker(item);
+            cardContain.appendChild(articleCard);
+        });
+        technology.forEach(item =>{
             const articleCard = cardMaker(item);
             cardContain.appendChild(articleCard);
         });
@@ -77,10 +81,6 @@ function getData(){
             cardContain.appendChild(articleCard);
         });
         node.forEach(item =>{
-            const articleCard = cardMaker(item);
-            cardContain.appendChild(articleCard);
-        });
-        technology.forEach(item =>{
             const articleCard = cardMaker(item);
             cardContain.appendChild(articleCard);
         });
