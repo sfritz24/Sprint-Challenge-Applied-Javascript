@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document Object Model. It allows us to change things with the HTML without actually changing the HTML
+
 2. What is an event?
+
+Whatever the user does on the webpage. Clicking on a button, moving the mouse anywhere, scrolling up or down with the mouse.
 
 3. What is an event listener?
 
+The event listener will wait for something to happen like the click, and when that event happens it will cause something else to happen. Clicking on a button might change the font size
+
 4. Why would we convert a NodeList into an Array?
 
+let arr = Array.prototype.slice.call(...whatever the nodelist is)
+
 5. What is a component?
+
+Components are reuseable functions that allow us to make and add things to the DOM like cards or menus or whatever.
 
 ### Git Set up
 
